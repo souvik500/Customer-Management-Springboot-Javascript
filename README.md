@@ -123,7 +123,7 @@ After starting the backend server, follow these steps:
 1. Open the file **`src/main/resources/static/html/login.html`** in your web browser.
 2. Enter your login credentials:
    - **Username:** `admin`
-   - **Password:** `admin123`
+   - **Password:** `admin`
 3. After successful authentication, you will be redirected to **`customerList.html`**, where you can manage customers.
 
 🔹 Ensure that the **backend server is running** at `http://localhost:2000` before accessing the frontend.
