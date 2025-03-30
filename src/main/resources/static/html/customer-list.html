@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Management - Customer List</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Customer Management</h1>
+            <div class="header-actions">
+                <button id="logoutBtn" class="btn btn-secondary">Logout</button>
+            </div>
+        </header>
+        
+        <div class="actions">
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search customers...">
+                <button id="searchBtn" class="btn btn-primary">Search</button>
+            </div>
+            <div class="buttons">
+                <button id="addCustomerBtn" class="btn btn-primary">Add Customer</button>
+                <button id="syncBtn" class="btn btn-success">Sync</button>
+            </div>
+        </div>
+        
+        <div class="table-container">
+            <table id="customerTable">
+                <thead>
+                    <tr>
+                        <th data-sort="id">ID <span class="sort-icon">↕</span></th>
+                        <th data-sort="firstName">First Name <span class="sort-icon">↕</span></th>
+                        <th data-sort="lastName">Last Name <span class="sort-icon">↕</span></th>
+                        <th data-sort="email">Email <span class="sort-icon">↕</span></th>
+                        <th data-sort="phone">Phone <span class="sort-icon">↕</span></th>
+                        <th data-sort="city">City <span class="sort-icon">↕</span></th>
+                        <th data-sort="state">State <span class="sort-icon">↕</span></th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="customerTableBody">
+                    <!-- Customer data will be loaded here -->
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="pagination">
+            <button id="prevPage" class="btn btn-secondary">Previous</button>
+            <span id="pageInfo">Page 1 of 1</span>
+            <button id="nextPage" class="btn btn-secondary">Next</button>
+        </div>
+        
+        <div id="message" class="message"></div>
+    </div>
+    <script src="../js/customer-list.js"></script>
+</body>
+</html>
