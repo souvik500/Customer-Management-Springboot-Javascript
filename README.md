@@ -116,6 +116,20 @@ mvn spring-boot:run
 The backend will be running at http://localhost:2000.
 
 
+## 🖥️ Running the Frontend
+
+After starting the backend server, follow these steps:
+
+1. Open the file **`src/main/resources/static/html/login.html`** in your web browser.
+2. Enter your login credentials:
+   - **Username:** `admin`
+   - **Password:** `admin123`
+3. After successful authentication, you will be redirected to **`customerList.html`**, where you can manage customers.
+
+🔹 Ensure that the **backend server is running** at `http://localhost:2000` before accessing the frontend.
+
+
+
 ## 📡 API Endpoints
 
 | HTTP Method | Endpoint | Description | Authentication |
