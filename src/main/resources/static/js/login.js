@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Check if user is already logged in
-    if (localStorage.getItem('auth')) {
-        window.location.href = 'customer-list.html';
+    if (sessionStorage.getItem('auth')) {
+        window.location.href = 'login.html';
     }
     
     const loginForm = document.getElementById('loginForm');
