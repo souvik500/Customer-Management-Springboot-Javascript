@@ -9,7 +9,7 @@ A CRUD application for managing customer data with JWT authentication.
 - List customers with pagination, sorting, and searching
 - Sync customers from a remote API
 
-##Technologies Used
+## Technologies Used
 
 - Backend: Spring Boot 3+
 - Frontend: HTML, CSS, JavaScript (ES6)
